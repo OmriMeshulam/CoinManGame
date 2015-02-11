@@ -621,6 +621,14 @@ public class CoinManGame implements ApplicationListener {
 			SoundManager.background.play();
 		}
 		
+		if(changed){
+			for(GameObjs obj : list){
+				if(obj.getClass() == MysteryBox.class){
+					delete.add(obj);
+				}
+			}
+		}
+		
 		while(!delete.isEmpty()){
 			list.remove(delete.get(0));
 			delete.remove(0);
@@ -931,7 +939,7 @@ public class CoinManGame implements ApplicationListener {
 			if(touch.overlaps(menuButtonRestart)){
 				gameState = 2;
 				lvl = 1;
-				loadlvl("level1");
+				loadlvl("levels/level1");
 				player1.reset();
 				player1.setPosition(250, 400);
 				this.worldClearSoundPlayed = false;

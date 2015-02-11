@@ -28,7 +28,7 @@ public class TextureManager {
 		mario_big_walking_1	= new Texture(Gdx.files.internal("sprites/mario_big_walking_1.png"));
 		mario_duck= new Texture(Gdx.files.internal("sprites/mario_duck.png"));
 		flagPole = new Texture(Gdx.files.internal("sprites/rsz_1flagpole.png"));
-		spike = new Texture(Gdx.files.internal("sprites/Spike.png")); 
+		spike = new Texture(Gdx.files.internal("sprites/spike.png")); 
 		bush = new Texture(Gdx.files.internal("sprites/bush.png"));
 		cloud = new Texture(Gdx.files.internal("sprites/cloud.png"));
 		bullet = new Texture(Gdx.files.internal("sprites/bullet_small.png")); 
